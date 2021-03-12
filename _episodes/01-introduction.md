@@ -20,7 +20,9 @@ There are two types of programming languages, interpreters and compilers. Interp
 
 - Installation
     - Download
+    - Install
 - Create a workspace
+    - Directory Structure
 - Press Ctrl-Shift-P
 - Select the directory where you want to save the project
 - Call the project: `java-intro-program`. You can call it anything but for now stick to this so that we are all on the same page.

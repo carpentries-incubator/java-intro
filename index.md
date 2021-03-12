@@ -3,6 +3,10 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
+
+# Audience
+No prior knowledge of Java or any other programming language is required for this lesson. The lesson is aimed at researchers wishing to write programs in Java for the purposes of gathering or analysing their data.
+
 The Java programming language is a **class based**, **object-oriented** programming language. It was designed to be a general-purpose programming language intended to write once, run anywhere (WORA) which means that once written and compiled it should run on any platform that supports Java without the need for recompilation. A Java program requires the Java Virtual Machine to be installed. The syntax of the Java language is similar to that of C++.
 
 <!-- this is an html comment -->

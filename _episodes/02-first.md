@@ -27,7 +27,7 @@ public class HelloWorld {
     
 }
 ```
-This is the most basic piece of code you have in Java, but you can yet run it in any way because it is just an empty class. To be able to run a Java program you have to specify the entry point. We do this by creating a method called `main` in the class. Add the following code between the curly brackets
+This is the most basic piece of code you have in Java, but you can't run yet it because it is just an empty class. To be able to run a Java program you have to specify the entry point. We do this by creating a method called `main` in the class. Add the following code between the curly brackets
 
 ```
     public static void main(String[] args) {
