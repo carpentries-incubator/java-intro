@@ -23,7 +23,7 @@ The Java programming language is a **class based**, **object-oriented** programm
 > - [Netbeans IDE](https://netbeans.org/)
 > - [Visual Studio Code](https://code.visualstudio.com/)
 >
-> These are all free to download and install. For the purpose of this lesson we will use Visual Studio code
+> These are all free to download and install. For the purpose of this lesson we shall use Visual Studio code.
 {: .prereq}
 
 {% include links.md %}
