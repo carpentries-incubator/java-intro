@@ -1,5 +1,5 @@
 ---
-title: "Our first program"
+title: "Numbers"
 teaching: 0
 exercises: 0
 questions:
