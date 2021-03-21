@@ -112,7 +112,7 @@ You could do all of this manually but usually your IDE, as repl.it is doing now,
 > 
 > 1. Java code is organised in classes. A program consists of one or more classes.
 > 1. One of the classes of a program must have a method called ```main(String[] args)```. The JRE needs the ```main``` method to run a program.
-> 1. During `runtime` (i.e. when you run the program), classes get **instantiated** which means that the memory required to run a class is reserved and the code for that class is loaded into that memory. This chunk of reserved memory is then called an object.
+> 1. An object is an instance of a class. When you **instantiate** a class a chunk of memory is allocate for that object.
 > 1. By convention classnames start with a capital.
 > 1. Classes are saved in a file with the same name as the class and with the extension ```.java```.
 > 1. When a class is compiled, the compiled code will be saved in a filename with the same name as the class but with a ```.class``` extension.
