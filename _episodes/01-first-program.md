@@ -104,7 +104,6 @@ You could do all of this manually but usually your IDE, as repl.it is doing now,
 > java Main
 > ```
 > What happens?
-
 {: .challenge}
 
 > ## Summary
