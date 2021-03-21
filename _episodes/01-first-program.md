@@ -114,7 +114,6 @@ You could do all of this manually but usually your IDE, as repl.it is doing now,
 > 1. By convention classnames start with a capital.
 > 1. Classes are saved in a file with the same name as the class and with the extension ```.java```.
 > 1. When a class is compiled, the compiled code will be saved in a filename with the same name as the class but with a ```.class``` extension.
-
 {: .discussion}
 
 {% include links.md %}
