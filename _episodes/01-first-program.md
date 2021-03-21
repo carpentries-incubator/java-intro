@@ -9,6 +9,7 @@ objectives:
 - "Identify the different parts of the program and explain their purpose."
 - "Know what a class is."
 - "Know why we need ```main(String[] args)```."
+- "Know how to run a java program (class)."
 keypoints:
 - "What is a class?"
 - "What is the purpose of public static void ```main(String[] args)?```"
@@ -17,6 +18,7 @@ keypoints:
 - "What is the naming convention of classes?"
 - "What should the filename be in which a class is saved?"
 - "What will the filename be of a compiled class?"
+- "How do you run a compiled Java program (class)?"
 ---
 
 ## Smallest possible program
@@ -25,7 +27,7 @@ We mentioned on our introductory page that Java is a **class based** and **objec
 
 Let's create a class called HelloWorld (the blue print). This class will be used to build a program that is going to print "Hello World" on the screen. The name of the file in which the class is saved **HAS** to be the same as the name of the class ending with the extention ```.java```. Usually we would call this program HelloWorld, but because of the way repl.it works, we have to call it Main. So we have to create a file called Main.java. To the Java compiler it doesn't matter what you call it but convention is to call it something meaningful so that someone else (or you when you come back to it tomorrow) can infer from the name what it will do.
 
-Type the following code into the editor:
+Create a repl called ```01.HelloWorld```. Repl.it will create a file called Main.java for you with the following code already entered (without the comments):
 
 ```java
 /** 
@@ -61,7 +63,7 @@ Hello world!
 You could do all of this manually but usually your IDE, as repl.it is doing now, will take care of it. The first line compiles the program. The second line runs the program and the third line is the output of the program.
 
 > ## Exercise
-> You can add as many System.out.println statements as you want. Experiment a bit and print some things on the screen.
+> You can add as many System.out.println statements as you want. Experiment a bit and print some text on the screen.
 {: .challenge}
 
 > ## Solution
@@ -114,6 +116,7 @@ You could do all of this manually but usually your IDE, as repl.it is doing now,
 > 1. By convention classnames start with a capital.
 > 1. Classes are saved in a file with the same name as the class and with the extension ```.java```.
 > 1. When a class is compiled, the compiled code will be saved in a filename with the same name as the class but with a ```.class``` extension.
+> 1. To run a java program we type: ```java ClassName```.
 {: .discussion}
 
 {% include links.md %}
