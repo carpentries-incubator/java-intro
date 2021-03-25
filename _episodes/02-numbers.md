@@ -3,45 +3,77 @@ title: "Numbers"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How can we print numbers on the screen?"
+- "When is a number just text and when is it an actual numeric value?"
+- "How do I do calculations on numbers?"
 objectives:
-- "Writing the most basic Java program that will run."
+- "Distinguish between strings and values."
+- "Do basic calculations on values."
+- "Know what an operator is."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "What is a string?"
+- "What is concatenation?"
 ---
-If you followed the instructions so far you should now have a file called App.java with the following bit of code in it:
+
+What would a programming language be without the ability to manipulate numbers? So let's try a couple of thing to discover how Java works with numbers and characters.
+
+Start by creating a new repl called ```02.Numbers```. As before, repl.it will create a file called Main.java for you with the "Hello World" code in it. Change the code to look as follows:
 
 ```java
-public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Print the number ten: 10");
+  }
 }
-
 ```
-VSC added this basic outline for you. Do you remember that we said Java is a *class based* programming language? Well, here you can see that a class was created for you. Let's recreate this manually.
 
-First create a new file. Make sure you have selected `src` inside `java-intro-program`. Click on File, New File and enter the name HelloWorld.java. When you press enter. VSC will create the file `HelloWorld.java` with the following code int it:
+When you run the program it should print the following on the screen:
+
+```bash
+Print the number ten: 10
+```
+
+> ## Exercise
+> - Insert the following statement after the third line ```System.out.println("Print the number ten: " + 10);```
+> ```java
+> class Main {
+>   public static void main(String[] args) {
+>     System.out.println("Print the number ten: 10");
+>     System.out.println("Print the number ten: " + 10);
+>   }
+> }
+> ```
+> - Compile and run the program again.
+>
+> Does the output of line 3 look different to the output of line 4?
+> What is the difference between the two statements?
+{: .challenge}
+
+> ## Solution
+> From the user's point of view there is no difference but, to the compiler there is a difference. Characters that are enclosed in quotes are considered to be a string. In the first case the digits of the number 10 are considered to be characters. Java uses something called **Unicode** which is a standard for encoding text expressed in most of the world's writing systems. Each character in Unicode has a unique number. In the second statement the number 10 is not in quotes and is therefore considered to be an integer value. However, the compiler has to convert the number to a string before it can concatenate it to the string in the quotes. The compiler does this automatically.
+{: .solution}
+
+Let's try something different. Change your program to look as follows and compile and run it again:
+
 ```java
-public class HelloWorld {
-    
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Print ten plus ten: 10 + 10");
+    System.out.println("Print ten plus ten: " + 10 + 10);
+    System.out.println("Print ten plus ten: " + (10 + 10));
+  }
 }
 ```
-This is the most basic piece of code you have in Java, but you can't run yet it because it is just an empty class. To be able to run a Java program you have to specify the entry point. We do this by creating a method called `main` in the class. Add the following code between the curly brackets
 
+```bash
+Print ten plus ten: 10 + 10
+Print ten plus ten: 1010
+Print ten plus ten: 20
 ```
-    public static void main(String[] args) {
 
-    }
-```
-
-The program should now look like this:
-```java
-public class HelloWorld {
-        public static void main(String[] args) {
-            
-        }
-}
+> ## Discussion
+> Why do you think we are getting this output?
+{: .discussion}
 
 {% include links.md %}
 
