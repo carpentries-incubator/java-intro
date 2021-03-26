@@ -64,23 +64,23 @@ Print the value of total: 1000
 Let’s look at the program line by line:
 - Note: By convention variable names start with lower-case.
 
-1. The first line is just a comment
-1. Define the beginning of a class named Main
-1. Another comment
-1. Declaring the main method (the front door to the program)
-1. Yet another comment
-1. ```String``` specifies the type of value that will be stored in the variable called ```stringVariable```. The ```=``` is an ***assignment operator***. The variable ```stringVariable``` will be ***assigned*** the value specified to the right of the ```=```, which in this case is ```Print ten plus ten: ```
+1. The first line is just a comment.
+1. Define the beginning of a class named Main.
+1. Another comment.
+1. Declaring the main method (the front door to the program).
+1. Yet another comment.
+1. ```String``` specifies the type of value that will be stored in the variable called ```stringVariable```. The ```=``` is an ***assignment operator***. The variable ```stringVariable``` will be ***assigned*** the value specified to the right of the ```=```, which in this case is ```Print ten plus ten: ```.
 1. ```int``` specifies the type of value that will be stored in ```integerValue```. The variable ```integerValue``` will be ***assigned*** the value specified to the right of the ```=```, which in this case is 10.
-1. Another comment
+1. Another comment.
 1. On this line we declare yet another integer, called ```total```, using the ```int``` ***keyword*** but we don't assign a value to the variable.
-1. Print some information to the console.
-1. Print some information to the console.
-1. Print some information to the console.
-1. Print some information to the console.
+1. Print the content of the variable ```stringVariable``` to the console. 
+1. Convert the number 10 and the integer value stored in ```integerValue``` to strings and then concatenate them to the string value stored in ```stringValue```. Print the final string to the console.
+1. Convert the integer value stored in ```integerValue``` to  a string and then concatenate that twice to the string value stored in ```stringValue```. Print the final string to the console.
+1. Add the integer value stored in ```integerValue``` to itself, convert the result to a string and then concatenate that to the string stored in ```stringAviable```. Print the final string to the console.
 1. Another comment
 1. ... and yet another comment.
 1. The variable ```total``` is assigned the value of the calculation ```integerValue * integerValue * 10```
-1. Print the value of the variable ```total``` to the console.
+1. Convert the integer value stored in ```total``` to a string and concatenate it to the string ```Print the value of total:```. Print the final string to the console.
 1. Curly brace to close the ```main``` method.
 1. Curly brace to close the class called ```Main```.
 
