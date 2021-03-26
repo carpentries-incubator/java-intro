@@ -32,25 +32,25 @@ Each of these types use a different amount of memory.
 Create a new repl and call it ```03.Variables```. Enter the following code and compile and run it:
 
 ```java
-// Define the class
-class Main {
-  // Define the main method
-  public static void main(String[] args) {
-    // Define variables and initialise them with values;
-    String stringVariable = "Print ten plus ten: ";
-    int integerValue = 10;
-    // You can also define a variable without initialising it;
-    int total;
-    System.out.println(stringVariable);
-    System.out.println(stringVariable + integerValue + 10);
-    System.out.println(stringVariable + integerValue + integerValue);
-    System.out.println(stringVariable + (integerValue + integerValue));
-    // Do some multiplication and store the value in the variable total
-    // Storing a value in a variable is called assingment
-    total = integerValue * integerValue * 10;
-    System.out.println("Print the value of total: " + total);
-  }
-}
+1  // Define the class
+2  class Main {
+3   // Define the main method
+4   public static void main(String[] args) {
+5     // Define variables and initialise them with values;
+6     String stringVariable = "Print ten plus ten: ";
+7     int integerValue = 10;
+8     // You can also define a variable without initialising it;
+9     int total;
+10    System.out.println(stringVariable);
+11    System.out.println(stringVariable + integerValue + 10);
+12    System.out.println(stringVariable + integerValue + integerValue);
+13    System.out.println(stringVariable + (integerValue + integerValue));
+14    // Do some multiplication and store the value in the variable total
+15    // Storing a value in a variable is called assingment
+16    total = integerValue * integerValue * 10;
+17    System.out.println("Print the value of total: " + total);
+18  }
+19}
 
 ```
 ```bash
@@ -61,12 +61,34 @@ Print ten plus ten: 20
 Print the value of total: 1000
 ```
 
-By convention variable names start with lower-case.
+Let’s look at the program line by line:
+- Note: By convention variable names start with lower-case.
+
+1. The first line is just a comment
+1. Define the beginning of a class named Main
+1. Another comment
+1. Declaring the main method (the front door to the program)
+1. Yet another comment
+1. ```String``` specifies the type of value that will be stored in the variable called ```stringVariable```. The ```=``` is an ***assignment operator***. The variable ```stringVariable``` will be ***assigned*** the value specified to the right of the ```=```, which in this case is ```Print ten plus ten: ```
+1. ```int``` specifies the type of value that will be stored in ```integerValue```. The variable ```integerValue``` will be ***assigned*** the value specified to the right of the ```=```, which in this case is 10.
+1. Another comment
+1. On this line we declare yet another integer, called ```total```, using the ```int``` ***keyword*** but we don't assign a value to the variable.
+1. Print some information to the console.
+1. Print some information to the console.
+1. Print some information to the console.
+1. Print some information to the console.
+1. Another comment
+1. ... and yet another comment.
+1. The variable ```total``` is assigned the value of the calculation ```integerValue * integerValue * 10```
+1. Print the value of the variable ```total``` to the console.
+1. Curly brace to close the ```main``` method.
+1. Curly brace to close the class called ```Main```.
+
 
 > ## Challenge
 >
 > Before leaving you to experiment with what you have learnt so far we are going to mention a couple more things to make it more interesting. 
-> - **operators**: Operators are characters that are used to perform actions on values.
+> - **Operators**: Operators are characters that are used to perform actions on values.
 > - Operators have **precedence**. That means that some operators have higher precedence than others. Operators with higher precedence are evaluated before operators with lower precedance. Operators on the same level of precedence are evaluated from left to right. Below is a table of operators. 
 {: .challenge}
 

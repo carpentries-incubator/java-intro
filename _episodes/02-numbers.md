@@ -7,8 +7,8 @@ questions:
 - "When is a number just text and when is it an actual numeric value?"
 - "How do I do calculations on numbers?"
 objectives:
-- "Distinguish between strings and values."
-- "Do basic calculations on values."
+- "Distinguish between strings and numbers."
+- "Do basic calculations on numbers."
 - "Know what an operator is."
 keypoints:
 - "What is a string?"

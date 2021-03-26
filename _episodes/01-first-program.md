@@ -5,11 +5,11 @@ exercises: 0
 questions:
 - "What does the simplest program look like in Java?"
 objectives:
-- "Writing the most basic program that can run in Java."
+- "Write the most basic program that can run in Java."
 - "Identify the different parts of the program and explain their purpose."
 - "Know what a class is."
 - "Know why we need ```main(String[] args)```."
-- "Know how to run a java program (class)."
+- "Know how to run a Java program (class)."
 keypoints:
 - "What is a class?"
 - "What is the purpose of public static void ```main(String[] args)?```"
@@ -18,10 +18,12 @@ keypoints:
 - "What is the naming convention of classes?"
 - "What should the filename be in which a class is saved?"
 - "What will the filename be of a compiled class?"
-- "How do you run a compiled Java program (class)?"
+- "How do you run a compiled Java program?"
 ---
 
 ## Smallest possible program
+
+We should probably start by defining what a **computer program** is. A program is a collection of instructions that can be executed by a computer to perform a task. So the smallest possible program would be the smallest number of instructions that we need to perform a task.
 
 We mentioned on our introductory page that Java is a **class based** and **object oriented** language. You can think of a class as a "blue print". If you are an architect and the computer is the builder, then the architect (the programmer) will provide the builder (the computer) with a blue print (the class) to build (instantiate) something (an object).
 
@@ -30,26 +32,37 @@ Let's create a class called HelloWorld (the blue print). This class will be used
 Create a repl called ```01.HelloWorld```. Repl.it will create a file called Main.java for you with the following code already entered (without the comments):
 
 ```java
-/** 
- * Define a class
- **/
-class Main {
-
-  // The entry level to a Java program is a method called ```main```
-  // Don't forget the ```String[] args``` in the parenthesis. 
-  public static void main(String[] args) {
-    // The next line will print the characters between the quotes to the screen
-    System.out.println("Hello World");
-  }
-}
+1 /** 
+2  * Define a class
+3  **/
+4 class Main {
+5 
+6   // The entry level to a Java program is a method called ```main```
+7   // Don't forget the ```String[] args``` in the parenthesis. 
+8   public static void main(String[] args) {
+9     // The next line will print the characters between the quotes to the screen
+10    System.out.println("Hello World");
+11  }
+12 }
 ```
 Let's look at the program line by line.
 
-1. The first three lines are comments. You can start a comment block with ```/**``` and end it with ```**/```. Everything in between these markers will be considered to be comments. The ```*``` at the beginning of the second line is purely for readability.
-1. Line 4 defines the name of the class. By convention, classnames start with a capital letter. The name of the file in which the class is saved must be the same as the class name and it has to end in ```.java```. Curly braces are used to indicate the beginning and ending of a structure. So the left curly brace after the classname, Main, indicates the beginning of the class while the right curly brace on line 12 closes it.
+1. The first three lines are comments. 
+  - You can start a comment block with ```/**``` and end it with ```**/```. 
+  - Everything in between these markers will be considered to be comments. 
+  - The ```*``` at the beginning of the second line is purely for readability.
+1. Line 4 defines the name of the class. 
+  - By convention, classnames start with a capital letter. 
+  - The name of the file in which the class is saved must be the same as the class name and it has to end in ```.java```. 
+1. Curly braces are used to indicate the beginning and ending of a structure. 
+  - The left curly brace after the classname, Main, indicates the beginning of the class while the right curly brace on line 12 closes it.
 1. The 5th line is empty. It is used purely for readability, the compiler will ignore any empty lines
 1. Lines 6 and 7 are single line comments. If you start a line with ```//```, the rest of the line will be ignored and considered to be a comment.
-1. It is important to understand line 8. However, trying to explain the meaning of each word in this line will be difficult at this point but it will become clearer as we go through the workshop. The main thing is to know that a Java program needs at least one class with this ```main``` method in it. It is like the front door to the program. When you ask the Java Runtime Environment (JRE) to run your program, it will look for this ```main``` method. The word ```public``` tells the JRE that the method is visible outside the class. The meaning of this will become clearer when we write several classes to work together. If it was called private, the method would only be visible to the code inside the class itself. We'll leave the word ```static``` for later but it is important to know that it is needed for this specific method. You also need the ```String[] args``` in the curly brackets - it's meaning will also become clear in the following episodes. As before, the curly braces are used to define the begin and end of a code block, which in this case is a **method**. 
+1. It is important to understand line 8. However, trying to explain the meaning of each word in this line will be difficult at this point but it will become clearer as we go through the workshop. 
+  - **```main``` method**: The main thing is to know that a Java program needs at least one class with this ```main``` method in it. It is like the front door to the program. When you ask the Java Runtime Environment (JRE) to run your program, it will look for this ```main``` method. 
+  - **```public``` keyword**: The word ```public``` tells the JRE that the method is visible outside the class. The meaning of this will become clearer when we write several classes to work together. If it was called private, the method would only be visible to the code inside the class itself. 
+  - **```static``` keyword**: We'll leave the word ```static``` for later but it is important to know that it is needed for this specific method. 
+  - **Command line parameters**:You also need the ```String[] args``` in the curly brackets - it's meaning will also become clear in the following episodes. As before, the curly braces are used to define the begin and end of a code block, which in this case is a **method**. 
 
 
 The code now has to be compiled before it can run. In repl.it, above the editor there is a button with the word ```Run``` and a small green arrow. Press the button to compile and run the program. In the console, next to the editor, repl.it displays the commands for compiling and running. 
@@ -112,7 +125,7 @@ You could do all of this manually but usually your IDE, as repl.it is doing now,
 > 
 > 1. Java code is organised in classes. A program consists of one or more classes.
 > 1. One of the classes of a program must have a method called ```main(String[] args)```. The JRE needs the ```main``` method to run a program.
-> 1. An object is an instance of a class. When you **instantiate** a class a chunk of memory is allocate for that object.
+> 1. An object is an instance of a class. When you **instantiate** a class a chunk of memory is allocated for that object.
 > 1. By convention classnames start with a capital.
 > 1. Classes are saved in a file with the same name as the class and with the extension ```.java```.
 > 1. When a class is compiled, the compiled code will be saved in a filename with the same name as the class but with a ```.class``` extension.
