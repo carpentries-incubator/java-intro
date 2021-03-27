@@ -89,22 +89,28 @@ Let’s look at the program line by line:
 >
 > Before leaving you to experiment with what you have learnt so far we are going to mention a couple more things to make it more interesting. 
 > - **Operators**: Operators are characters that are used to perform actions on values.
-> - Operators have **precedence**. That means that some operators have higher precedence than others. Operators with higher precedence are evaluated before operators with lower precedance. Operators on the same level of precedence are evaluated from left to right. Below is a table of operators. 
+> - Operators have **precedence**. That means that some operators have higher precedence than others. Operators with higher precedence are evaluated before operators with lower precedance. Operators on the same level of precedence are evaluated from left to right. Below is a table of operators. The subheadings in the table groups the operators with the same precedence together. The groups are listed according to the precedence order. The closer to the top of the table a group appears, the higher its precedence. 
+>
+> Take the next few minutes and see if you can write some code to do the suggested calculations below. Separate your code with white space and comments. In the next lessons we will then organise our code in a much more efficient way. Don't just "hard code" values, but use variables and assignments.
+> 1. Converting fahrenheit to celsius. The formula used for this is: ((fahrenheit - 32) * (5/9))
+> 1. Converting celsius to fahrenheit. The formula used for this is: ((celsius * 9/5) + 32)
+> 1. Converting celsius to kelvin: The formula used for this is: (celsius + 273.15)
+> 1. Converting fahrenheit to kelvin: Can you work this one out yourself by using what you have already done?
 {: .challenge}
 
-Here are a few of the operators:
-
-|Operator|Function|Example|
+|Operator|Description|Example|
 |---|---|---|
-|+|Addition|10 + 10, variable1 + variable2|
-|-|Subtraction|10 - 5, variable1 - variable2|
-|*|Multiplication|15 * 2, variable1 * variable2|
-|%|Modulus|10 % 3, variable1 % variable2|
-|/|Division|10 / 2|
-|=|Assignment|total = variable1 + 10|
-
-
-
-
+|**Postfix**|
+|++ (Increment)|Increases the value of operand by 1.|B++ gives 21|
+|-- (Decrement)|Decreases the value of operand by 1.|B-- gives 19|
+|**Multiplicative**|
+|* (Multiplication)|Multiplies values on either side of the operator.|A * B will give 200|
+|/ (Division)|Divides left-hand operand by right-hand operand.|B / A will give 2|
+|% (Modulus)|Divides left-hand operand by right-hand operand and returns remainder.|B % A will give 0|
+|**Additive**|
+|+ (Addition)|Adds values on either side of the operator.|A + B will give 30|
+|- (Subtraction)|Subtracts right-hand operand from left-hand operand.|A - B will give -10|
+|**Assignment**|
+|= (Simple assignment operator)|Assigns values from right side operands to left side operand.|C = A + B will assign value of A + B into C|
 
 {% include links.md %}
