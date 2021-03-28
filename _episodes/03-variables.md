@@ -1,5 +1,5 @@
 ---
-title: "Variables"
+title: "Variables and Types"
 teaching: 0
 exercises: 0
 questions:
