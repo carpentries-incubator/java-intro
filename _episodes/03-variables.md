@@ -84,19 +84,11 @@ Let’s look at the program line by line:
 1. Curly brace to close the ```main``` method.
 1. Curly brace to close the class called ```Main```.
 
+## Operators
 
-> ## Challenge
->
-> Before leaving you to experiment with what you have learnt so far we are going to mention a couple more things to make it more interesting. 
-> - **Operators**: Operators are characters that are used to perform actions on values.
-> - Operators have **precedence**. That means that some operators have higher precedence than others. Operators with higher precedence are evaluated before operators with lower precedance. Operators on the same level of precedence are evaluated from left to right. Below is a table of operators. The subheadings in the table groups the operators with the same precedence together. The groups are listed according to the precedence order. The closer to the top of the table a group appears, the higher its precedence. 
->
-> Take the next few minutes and see if you can write some code to do the suggested calculations below. Separate your code with white space and comments. In the next lessons we will then organise our code in a much more efficient way. Don't just "hard code" values, but use variables and assignments.
-> 1. Converting fahrenheit to celsius. The formula used for this is: ((fahrenheit - 32) * (5/9))
-> 1. Converting celsius to fahrenheit. The formula used for this is: ((celsius * 9/5) + 32)
-> 1. Converting celsius to kelvin: The formula used for this is: (celsius + 273.15)
-> 1. Converting fahrenheit to kelvin: Can you work this one out yourself by using what you have already done?
-{: .challenge}
+Before leaving you to experiment with what you have learnt so far we are going to mention a couple more things to make it more interesting. 
+- **Operators**: Operators are characters that are used to perform actions on values.
+- Operators have **precedence**. That means that some operators have higher precedence than others. Operators with higher precedence are evaluated before operators with lower precedance. Operators on the same level of precedence are evaluated from left to right. Below is a table of operators. The subheadings in the table groups the operators with the same precedence together. The groups are listed according to the precedence order. The closer to the top of the table a group appears, the higher its precedence. 
 
 |Operator|Description|Example|
 |---|---|---|
@@ -112,5 +104,76 @@ Let’s look at the program line by line:
 |- (Subtraction)|Subtracts right-hand operand from left-hand operand.|A - B will give -10|
 |**Assignment**|
 |= (Simple assignment operator)|Assigns values from right side operands to left side operand.|C = A + B will assign value of A + B into C|
+
+> ## Challenge
+>
+> Take the next few minutes and see if you can write some code to do the calculations below.
+> 1. Converting fahrenheit to celsius. The formula used for this is: ((fahrenheit - 32) * (5/9))
+> 1. Converting celsius to fahrenheit. The formula used for this is: ((celsius * 9/5) + 32)
+> 1. Converting celsius to kelvin: The formula used for this is: (celsius + 273.15)
+> 1. Converting fahrenheit to kelvin: Can you work this one out yourself by using what you have already done?
+>
+> Steps:
+> 
+> - make four additional methods in Main; one for each of the calculations that a convert a value into another value. Go ahead and use the existing one as a skeleton (copy-paste) to be modified if you want.
+> 
+> Hints:
+> 
+> - your methods can `return` the converted value.
+> - if methods with the `void` keyword terminates in a void, what might other variable types as method keywords enable the methods to do?
+> - append `f` for float to 273.15 or java won't compute.
+> 
+> Suggestions:
+> 
+> - add more `System.out.println()` statements to explain the conversion by calling your methods with values of your choosing.
+{: .challenge}
+> - make one method and the accompanying printed explanation until you have made all four calculations.
+
+> ## Solution
+> ```java 
+> class Main {
+>   public static void main(String[] args) {
+>     System.out.println("Calculate to convert!");
+>     System.out.println(50 + " degrees Fahrenheit is " + fahrenheitToCelcius(50) + " degrees Celcius");
+>     System.out.println(20 + " degrees Celcius is " + celciusToFahrenheit(20) + " degrees Fahrenheit");
+>     System.out.println(10 + " degrees Celcius is " + celciusToKelvin(10) + " degrees Kelvin");
+>     System.out.println(500 + " degrees Fahrenheit is " + fahrenheitToKelvin(500) + " degrees Kelvin");
+>     System.out.println(0 + " degrees Fahrenheit is " + fahrenheitToKelvin(0) + " degrees Kelvin");
+>   }
+> 
+>   public static float fahrenheitToCelcius(float fahrenheit) {
+>     float celcius = (fahrenheit - 32) * 5 / 9;
+>     return celcius;
+>   }
+> 
+>   public static float celciusToFahrenheit(float celcius) {
+>     float fahrenheit = (celcius * 9 / 5) + 32;
+>     return fahrenheit;
+>   }
+> 
+>   public static float celciusToKelvin(float celcius) {
+>     float kelvin = celcius + 273.15f;
+>     return kelvin;
+>   }
+> 
+>   public static float fahrenheitToKelvin(float fahrenheit) {
+>     float celcius = fahrenheitToCelcius(fahrenheit);
+>     float kelvin = celciusToKelvin(celcius);
+>     return kelvin;
+>   }
+> }
+> ```
+> 
+> Press the green **Run** button.
+> 
+> ```bash
+> Calculate to convert!
+> 50 degrees Fahrenheit is 10.0 degrees Celcius
+> 20 degrees Celcius is 68.0 degrees Fahrenheit
+> 10 degrees Celcius is 283.15 degrees Kelvin
+> 500 degrees Fahrenheit is 533.15 degrees Kelvin
+> 0 degrees Fahrenheit is 255.37222 degrees Kelvin
+> ```
+{: .solution}
 
 {% include links.md %}
